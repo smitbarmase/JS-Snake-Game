@@ -8,7 +8,7 @@ c = canvas.getContext('2d')
 // We are using "cell unit" for snake position on canvas.
 
 // For game modification
-const cellLength = 14 // Length of each cell
+const cellLength = 22 // Length of each cell
 const cellCount = 25
 const speed = 1.7 // Pixel to increase every time animate function is called.
 const snakeSize = 4
@@ -80,13 +80,13 @@ function printText(){
   c.fillStyle = "#ffffff"
   c.textAlign = "center"
 
-  c.font = "20px Arial"
-  c.fillText("Smooth scrolling snake game in JavaScript", innerWidth/2, 50)
+  c.font = "35px Arial"
+  c.fillText("Smooth scrolling snake game in JavaScript", innerWidth/2, 75)
 
-  c.font = "14px Arial"
-  c.fillText("Snake size : ".concat(refSnakeSize-1)+"   |   Cell count : ".concat(cellCount)+"   |   Cell length : ".concat(cellLength), innerWidth/2, innerHeight-40)
-  c.font = "14px Arial"
-  c.fillText("v1.0  |  Project developed by @smitbarmase", innerWidth/2, innerHeight-15)
+  c.font = "24px Arial"
+  c.fillText("Snake size : ".concat(refSnakeSize-1)+"   |   Cell count : ".concat(cellCount)+"   |   Cell length : ".concat(cellLength), innerWidth/2, innerHeight-75)
+  c.font = "24px Arial"
+  c.fillText("v1.0  |  Project developed by @smitbarmase", innerWidth/2, innerHeight-30)
 }
 
 function updateSnakeCell(){
